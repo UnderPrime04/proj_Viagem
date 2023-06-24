@@ -1,0 +1,52 @@
+<nav class="navbar fixed-top navbar-light bg-light">
+  <a class="navbar-brand ml-5" href="#">Controle de Viagens</a>
+  <a class="navbar-brand my-2 my-sm-0 mr-5" style="color:lightgray" [routerLink]="['/novaviagem']">Nova Viagem</a>
+</nav>
+<div class="card">
+  <div class="card-header">
+    Minhas Viagens
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Destino</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="Acapulco" placeholder="Destino">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Tipo</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="LAZER" placeholder="Tipo">
+        </div>
+      </div>
+    <div class="form-group row">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Data de Chegada</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control" id="colFormLabel" value="08/06/2021">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Data de Saida</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control" id="colFormLabel" value="">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Valor</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor" value="R$4.000,00">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Quantidade de Pessoas</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel" placeholder="Qtd. de Pessoas" value="4">
+      </div>
+    </div>
+    <div class="form-group">
+        <a [routerLink]="['']"><button type="submit" class="btn btn-primary">Registrar</button></a>
+    </div>
+</form>
+  </div>
+</div>
